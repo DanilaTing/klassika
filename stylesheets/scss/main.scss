@@ -87,3 +87,27 @@
     // }
   }
 }
+
+.object {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 0px;
+  height: 0px;
+}
+.wrap > * {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 350px;
+  height: 350px;
+  margin-left: -175px;
+  margin-top: -175px;
+}
+.path {
+  fill: #ffff73;
+}
+body {
+  overflow: hidden;
+  background: #127066;
+}
