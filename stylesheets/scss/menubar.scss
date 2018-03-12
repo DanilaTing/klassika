@@ -1,0 +1,40 @@
+.menubar {
+  position: fixed;
+  z-index: 1000;
+
+  width: 100vw;
+  height: 60px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  background-color: white;
+
+  font-family: 'Proxima Nova';
+  font-size: 17px;
+
+  .left {
+    width: 646px;
+    margin-left: 30px;
+
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .right {
+    margin-right: 30px;
+  }
+}
+
+.place {
+  z-index: 1000;
+  font-family: 'Playfair Display';
+  font-style: italic;
+  font-size: 20px;
+
+  transform: rotate(-90deg);
+  position: fixed;
+
+  margin: 310px 0 0 -50px;
+}

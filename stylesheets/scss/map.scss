@@ -1,0 +1,41 @@
+.map {
+  position: fixed;
+  height: 600px;
+  width: 328px;
+
+  background-color: rgba(253, 235, 14, 1);
+  opacity: .3;
+
+  right: 0;
+  top: 121px;
+
+  cursor: url('../../images/cursor1.png'), auto;
+}
+
+.close {
+  width: 50px;
+  height: 50px;
+  opacity: 0;
+  position: fixed;
+  z-index: 1000;
+  margin: 90px 0 0 30px;
+  cursor: pointer;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  div {
+    width: 2px;
+    height: 40px;
+    background-color: black;
+
+    &:first-of-type {
+      transform: rotate(45deg);
+    }
+
+    &:last-of-type {
+      transform: rotate(-45deg);
+    }
+  }
+}

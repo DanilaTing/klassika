@@ -6,37 +6,74 @@
     <link rel="stylesheet" href="stylesheets/css/all.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
-    <script src="javascripts/kute.min.js"></script>
-    <script src="javascripts/kute-jquery.min.js"></script>
-    <script src="javascripts/kute-svg.min.js"></script>
-
     <script src="javascripts/snap.svg-min.js"></script>
 
     <script src="javascripts/morph.js"></script>
+    <script src="javascripts/scroll.js"></script>
+    <script src="javascripts/map.js"></script>
   </head>
 
   <body>
+    <div class="menubar">
+      <div class="left">
+        <p>карта</p>
+        <p>благотворительность</p>
+        <p>участники</p>
+        <p>программа</p>
+      </div>
+      <div class="right">
+        <p>контакты</p>
+      </div>
+    </div>
+
+    <p class="place">Феодосия, лето 2018</p>
+
+    <div class="map"></div>
+    <div class='close'><div></div><div></div></div>
+
     <section class="firstScreen">
-      <div class="ovalName">
-        <!-- <figure class="firstScreenOval"></figure> -->
+      <svg class="firstScreenOval" id="firstScreenOval" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 602.4 609.71">
+        <defs>
+          <style>
+            .firstScreenOval {
+              fill: rgba(253, 235, 14, 1);
+              transition: 1s ease-in-out;
+            }
+          </style>
+        </defs>
+        <title>oval1</title>
+        <path class="firstScreenOvalPath" d="M264,180.57c-24.14,25.12-39.24,57.36-53.64,89.08-34.08,75.1-67.38,155.69-56.35,237.42C163.87,580.39,210.09,646.2,271.16,688c74.78,51.16,172.24,67.74,259.73,44.21a307.22,307.22,0,0,0,109.18-54.28C722.91,613.12,766.94,502.09,751,398.13c-4.67-30.44-14.6-61.06-35-84.12-17.32-19.56-40.86-32.3-63.88-44.64L464.33,168.73c-30.66-16.43-69.26-40.66-105.62-34.89C325.1,139.18,287.55,156,264,180.57Z" transform="translate(-151.83 -132.97)"/>
+      </svg>
 
-        <svg class="firstScreenOval" id="firstScreenOval" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 602.4 609.71">
-          <defs>
-            <style>
-              #firstScreenOval {
-                fill: blue;
-              }
-            </style>
-          </defs>
-          <title>oval1</title>
-          <path id="firstScreenOvalPath" d="M264,180.57c-24.14,25.12-39.24,57.36-53.64,89.08-34.08,75.1-67.38,155.69-56.35,237.42C163.87,580.39,210.09,646.2,271.16,688c74.78,51.16,172.24,67.74,259.73,44.21a307.22,307.22,0,0,0,109.18-54.28C722.91,613.12,766.94,502.09,751,398.13c-4.67-30.44-14.6-61.06-35-84.12-17.32-19.56-40.86-32.3-63.88-44.64L464.33,168.73c-30.66-16.43-69.26-40.66-105.62-34.89C325.1,139.18,287.55,156,264,180.57Z" transform="translate(-151.83 -132.97)"/>
-          <path id="firstScreenOvalPath2" style="visibility:hidden" d="M1801.07,297.13c-49.08,44.57-83.7,110.63-73.48,176.14,5.43,34.82,22.78,66.5,40.36,97,20.57,35.74,42.36,71.66,73.2,99,58.16,51.63,139.81,65.85,217.16,74,44.9,4.75,92,7.85,133.54-9.94,31.75-13.61,57.42-38.41,79.38-65.08,57.57-69.92,95-159.85,87.54-250.1-7.27-87.72-58.64-170.66-133.94-216.24-54.64-33.08-120.85-45.86-184-37.33-27.08,3.66-50.3,10.34-71.58,27.58-22.75,18.44-47.66,29.15-73.67,42.33C1861.81,251.71,1829.18,271.6,1801.07,297.13Z" transform="translate(-1725.8 -162.13)"/>
-        </svg>
+      <figure class="violin"></figure>
 
-        <div class="firstScreenName">
-          <h1>Klassika</h1>
+      <svg class="firstScreenOval small" id="firstScreenOval" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 602.4 609.71">
+        <defs>
+          <style>
+            .firstScreenOval {
+              fill: rgba(253, 235, 14, 1);
+            }
+          </style>
+        </defs>
+        <title>oval1</title>
+        <path class="firstScreenOvalPath" d="M264,180.57c-24.14,25.12-39.24,57.36-53.64,89.08-34.08,75.1-67.38,155.69-56.35,237.42C163.87,580.39,210.09,646.2,271.16,688c74.78,51.16,172.24,67.74,259.73,44.21a307.22,307.22,0,0,0,109.18-54.28C722.91,613.12,766.94,502.09,751,398.13c-4.67-30.44-14.6-61.06-35-84.12-17.32-19.56-40.86-32.3-63.88-44.64L464.33,168.73c-30.66-16.43-69.26-40.66-105.62-34.89C325.1,139.18,287.55,156,264,180.57Z" transform="translate(-151.83 -132.97)"/>
+      </svg>
+
+      <div class="logoText">
+        <div class="logo">
+          <h1 class="name">Klassika</h1>
+          <p class="subtitle">Международный арт-фестиваль </p>
         </div>
+
+        <p class="firstText">В середине лета живописная Феодосия предстанет перед<br>местными жителями и гостями города в новом амплуа.<br> Впервые весь город станет единой площадкой для<br> проведения Международного арт-фестиваля «Klassika».</p>
       </div>
     </section>
-  </body>
+
+    <section class="secondScreen">
+      <div class="textWrapper">
+        <p class="firstText">Название фестиваля говорит за себя: с 6 по 8 июля улицы Феодосии наполнятся звуками классических произведений,  а сам город станет местом встречи ведущих отечественных  и зарубежных артистов.</p>
+        <p class="firstText">В городе будут открыты более 25 площадок, на которых с утра  до позднего вечера будут проходить самые разные мероприятия — от флэшмобов и выставок до мастерклассов и камерных концертов.</p>
+      </div>
+    </section>
+
 </html>

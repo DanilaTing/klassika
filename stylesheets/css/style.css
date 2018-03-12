@@ -3,41 +3,15 @@
 
 .firstScreen {
   width: 100vw;
-  height: 100vh; }
-  .firstScreen .ovalName {
-    position: absolute;
-    margin: 36px 0 0 80px;
-    width: 788px;
-    height: 746px; }
-    .firstScreen .ovalName .firstScreenName {
-      width: 474px;
-      height: 138px;
-      margin: 320px 0 0 100px; }
-      .firstScreen .ovalName .firstScreenName h1 {
-        font-family: "Basis Grotesque Pro";
-        color: white;
-        font-size: 120px;
-        font-weight: 600;
-        text-align: center;
-        animation: letterspacing 4s cubic-bezier(0.2, 0, 0, 1);
-        animation-fill-mode: backwards;
-        transform: rotate(-90deg); }
-@keyframes letterspacing {
-  0% {
-    filter: blur(0.8rem); }
-  70% {
-    filter: blur(0.3rem); }
-  100% {
-    filter: blur(0rem); } }
-    .firstScreen .ovalName .firstScreenOval {
-      background-image: url(../../images/oval1.svg);
-      width: 788px;
-      height: 746px;
-      background-size: contain;
-      background-repeat: no-repeat;
-      position: absolute;
-      filter: blur(10px);
-      animation: scale 3s cubic-bezier(0.2, 0, 0, 1), spin 6s ease-in-out infinite; }
+  height: 826px; }
+  .firstScreen .firstScreenOval {
+    width: 400px;
+    height: 400px;
+    filter: blur(10px);
+    margin: 187px 0 0 174px;
+    position: fixed;
+    z-index: -100;
+    animation: scale 2s cubic-bezier(0.2, 0, 0, 1), spin 6s ease-in-out infinite; }
 @keyframes scale {
   0% {
     transform: scale(0);
@@ -45,27 +19,130 @@
   100% {
     transform: scale(1);
     filter: blur(10px); } }
-.object {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  width: 0px;
-  height: 0px; }
+  .firstScreen .violin {
+    background-image: url(../../images/violin.png);
+    width: 255px;
+    height: 595px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 119px;
+    left: 178px;
+    animation: appear 10s cubic-bezier(0.2, 0, 0, 1); }
+@keyframes appear {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+  .firstScreen .small {
+    width: 160px;
+    height: 160px;
+    z-index: 100;
+    position: absolute;
+    top: 395px;
+    left: -52px; }
+  .firstScreen .logoText {
+    margin: 200px 0 0 446px;
+    position: absolute; }
+    .firstScreen .logoText .logo {
+      transition: .5s ease-in-out; }
+      .firstScreen .logoText .logo .name {
+        font-family: "Proxima Nova";
+        font-size: 97px;
+        font-weight: 900;
+        animation: letterspacing 8s cubic-bezier(0.2, 0, 0, 1); }
+      .firstScreen .logoText .logo .subtitle {
+        font-family: "Playfair Display";
+        font-style: italic;
+        font-size: 30px;
+        animation: letterspacing 8s cubic-bezier(0.2, 0, 0, 1);
+        animation-fill-mode: backwards; }
+@keyframes letterspacing {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+    .firstScreen .logoText .firstText {
+      font-family: 'Proxima Nova';
+      font-size: 17px;
+      line-height: 24px;
+      margin-top: 70px;
+      width: 538px;
+      animation: letterspacing 8s cubic-bezier(0.2, 0, 0, 1);
+      animation-fill-mode: backwards; }
 
-.wrap > * {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  width: 350px;
-  height: 350px;
-  margin-left: -175px;
-  margin-top: -175px; }
+.secondScreen {
+  width: 100vw;
+  height: 826px; }
+  .secondScreen .textWrapper {
+    margin: 0px 0 0 446px;
+    position: absolute; }
+    .secondScreen .textWrapper .firstText {
+      font-family: 'Proxima Nova';
+      font-size: 17px;
+      line-height: 24px;
+      width: 538px;
+      animation: letterspacing 8s cubic-bezier(0.2, 0, 0, 1);
+      animation-fill-mode: backwards; }
+      .secondScreen .textWrapper .firstText:last-of-type {
+        margin-top: 60px; }
 
-.path {
-  fill: #ffff73; }
+.menubar {
+  position: fixed;
+  z-index: 1000;
+  width: 100vw;
+  height: 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: white;
+  font-family: 'Proxima Nova';
+  font-size: 17px; }
+  .menubar .left {
+    width: 646px;
+    margin-left: 30px;
+    display: flex;
+    justify-content: space-between; }
+  .menubar .right {
+    margin-right: 30px; }
 
-body {
-  overflow: hidden;
-  background: #127066; }
+.place {
+  z-index: 1000;
+  font-family: 'Playfair Display';
+  font-style: italic;
+  font-size: 20px;
+  transform: rotate(-90deg);
+  position: fixed;
+  margin: 310px 0 0 -50px; }
+
+.map {
+  position: fixed;
+  height: 600px;
+  width: 328px;
+  background-color: #fdeb0e;
+  opacity: .3;
+  right: 0;
+  top: 121px;
+  cursor: url("../../images/cursor1.png"), auto; }
+
+.close {
+  width: 50px;
+  height: 50px;
+  opacity: 0;
+  position: fixed;
+  z-index: 1000;
+  margin: 90px 0 0 30px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  .close div {
+    width: 2px;
+    height: 40px;
+    background-color: black; }
+    .close div:first-of-type {
+      transform: rotate(45deg); }
+    .close div:last-of-type {
+      transform: rotate(-45deg); }
 
 /*# sourceMappingURL=style.css.map */
