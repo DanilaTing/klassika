@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="43px" height="26px" viewBox="0 0 43 26" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 49 (51002) - http://www.bohemiancoding.com/sketch -->
+    <title>Sound off</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Icons" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Artboard" transform="translate(-105.000000, -51.000000)" fill="#9B9B9B" fill-rule="nonzero">
+            <path d="M142.313708,63.4852814 L147.970563,69.1421356 L145.142136,71.9705627 L139.485281,66.3137085 L133.828427,71.9705627 L131,69.1421356 L136.656854,63.4852814 L131,57.8284271 L133.828427,55 L139.485281,60.6568542 L145.142136,55 L147.970563,57.8284271 L142.313708,63.4852814 Z M105,59.5714286 L113.571429,59.5714286 L125,51 L125,76.7142857 L113.571429,68.1428571 L105,68.1428571 L105,59.5714286 Z" id="Sound-off"></path>
+        </g>
+    </g>
+</svg>

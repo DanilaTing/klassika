@@ -5,11 +5,19 @@
 
   background-color: rgba(253, 235, 14, 1);
   opacity: .3;
+  filter: blur(8px);
 
   right: 0;
   top: 121px;
 
   cursor: url('../../images/cursor1.png'), auto;
+
+  transition: .2s ease-in-out;
+}
+
+.map:hover {
+  width: 350px;
+  height: 620px;
 }
 
 .close {

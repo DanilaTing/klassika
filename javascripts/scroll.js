@@ -7,10 +7,18 @@ $(function() {
     scrolled = $('.menubar').offset().top
     console.log(scrolled);
 
+    // $('.skew').css('transform', 'rotateX(10deg) rotateY(5deg) rotateZ(-5deg)')
+
     if ( scrolled > lastScrollTop ) {
       newMargin += 1
     } else {
       newMargin -= 1
+    }
+
+    if (scrolled > 1) {
+      $('.logo').css('animation-name', 'scrollup')
+    } else {
+      $('.logo').css('animation-name', '')
     }
 
     if ( scrolled > 200 ) {

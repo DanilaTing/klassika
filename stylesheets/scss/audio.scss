@@ -1,0 +1,24 @@
+.audio {
+  display: none;
+}
+
+.soundOnOff {
+  background-image: url('../../images/icons/sound-off.svg');
+  background-size: contain;
+  background-repeat: no-repeat;
+
+  position: fixed;
+
+  top: 70px;
+  left: 35px;
+
+  width: 40px;
+  height: 20px;
+
+  cursor: pointer;
+  opacity: .5;
+
+  &:hover {
+    opacity: .8;
+  }
+}

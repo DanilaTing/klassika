@@ -7,10 +7,12 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
     <script src="javascripts/snap.svg-min.js"></script>
+    <script src="javascripts/TweenMax.min.js"></script>
 
-    <script src="javascripts/morph.js"></script>
     <script src="javascripts/scroll.js"></script>
     <script src="javascripts/map.js"></script>
+    <script src="javascripts/audio.js"></script>
+    <script src="javascripts/morph2.js"></script>
   </head>
 
   <body>
@@ -25,6 +27,12 @@
         <p>контакты</p>
       </div>
     </div>
+
+    <audio controls autoplay loop class="audio">
+      <source src="music/audio1.mp3" type="audio/mp3">
+    </audio>
+
+    <figure class="soundOnOff"></figure>
 
     <p class="place">Феодосия, лето 2018</p>
 
@@ -59,7 +67,7 @@
         <path class="firstScreenOvalPath" d="M264,180.57c-24.14,25.12-39.24,57.36-53.64,89.08-34.08,75.1-67.38,155.69-56.35,237.42C163.87,580.39,210.09,646.2,271.16,688c74.78,51.16,172.24,67.74,259.73,44.21a307.22,307.22,0,0,0,109.18-54.28C722.91,613.12,766.94,502.09,751,398.13c-4.67-30.44-14.6-61.06-35-84.12-17.32-19.56-40.86-32.3-63.88-44.64L464.33,168.73c-30.66-16.43-69.26-40.66-105.62-34.89C325.1,139.18,287.55,156,264,180.57Z" transform="translate(-151.83 -132.97)"/>
       </svg>
 
-      <div class="logoText">
+      <div class="logoText skew">
         <div class="logo">
           <h1 class="name">Klassika</h1>
           <p class="subtitle">Международный арт-фестиваль </p>
@@ -70,7 +78,7 @@
     </section>
 
     <section class="secondScreen">
-      <div class="textWrapper">
+      <div class="textWrapper skew">
         <p class="firstText">Название фестиваля говорит за себя: с 6 по 8 июля улицы Феодосии наполнятся звуками классических произведений,  а сам город станет местом встречи ведущих отечественных  и зарубежных артистов.</p>
         <p class="firstText">В городе будут открыты более 25 площадок, на которых с утра  до позднего вечера будут проходить самые разные мероприятия — от флэшмобов и выставок до мастерклассов и камерных концертов.</p>
       </div>

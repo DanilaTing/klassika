@@ -11,7 +11,7 @@
     margin: 187px 0 0 174px;
     position: fixed;
     z-index: -100;
-    animation: scale 2s cubic-bezier(0.2, 0, 0, 1), spin 6s ease-in-out infinite; }
+    animation: scale 2s cubic-bezier(0.2, 0, 0, 1), spin 60s infinite; }
 @keyframes scale {
   0% {
     transform: scale(0);
@@ -19,6 +19,11 @@
   100% {
     transform: scale(1);
     filter: blur(10px); } }
+@keyframes spin {
+  from {
+    transform: rotate(0deg); }
+  to {
+    transform: rotate(360deg); } }
   .firstScreen .violin {
     background-image: url(../../images/violin.png);
     width: 255px;
@@ -45,12 +50,17 @@
     margin: 200px 0 0 446px;
     position: absolute; }
     .firstScreen .logoText .logo {
-      transition: .5s ease-in-out; }
+      transition: .5s ease-in-out;
+      animation: 0.5s cubic-bezier(0.2, 0, 0, 1); }
       .firstScreen .logoText .logo .name {
         font-family: "Proxima Nova";
         font-size: 97px;
-        font-weight: 900;
-        animation: letterspacing 8s cubic-bezier(0.2, 0, 0, 1); }
+        font-weight: 900; }
+@keyframes scrollup {
+  0% {
+    transform: rotateX(0deg) rotateY(0deg) rotateZ(0deg); }
+  100% {
+    transform: rotateX(0deg) rotateY(360deg) rotateZ(0deg); } }
       .firstScreen .logoText .logo .subtitle {
         font-family: "Playfair Display";
         font-style: italic;
@@ -121,9 +131,15 @@
   width: 328px;
   background-color: #fdeb0e;
   opacity: .3;
+  filter: blur(8px);
   right: 0;
   top: 121px;
-  cursor: url("../../images/cursor1.png"), auto; }
+  cursor: url("../../images/cursor1.png"), auto;
+  transition: .2s ease-in-out; }
+
+.map:hover {
+  width: 350px;
+  height: 620px; }
 
 .close {
   width: 50px;
@@ -144,5 +160,22 @@
       transform: rotate(45deg); }
     .close div:last-of-type {
       transform: rotate(-45deg); }
+
+.audio {
+  display: none; }
+
+.soundOnOff {
+  background-image: url("../../images/icons/sound-off.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: fixed;
+  top: 70px;
+  left: 35px;
+  width: 40px;
+  height: 20px;
+  cursor: pointer;
+  opacity: .5; }
+  .soundOnOff:hover {
+    opacity: .8; }
 
 /*# sourceMappingURL=style.css.map */
