@@ -1,129 +1,304 @@
 * {
   box-sizing: border-box; }
 
-.firstScreen {
+body {
+  background-size: cover;
+  background-repeat: no-repeat; }
+
+.screenWraper {
   width: 100vw;
-  height: 826px; }
-  .firstScreen .firstScreenOval {
+  padding-top: 300px; }
+  .screenWraper h1 {
+    font-family: 'BebasNeueBook';
+    font-size: 80px;
+    color: #212121; }
+  .screenWraper h2 {
+    font-family: 'PlayfairDisplay-Italic';
+    font-size: 24px;
+    color: #212121; }
+  .screenWraper p {
+    margin-top: 20px;
+    font-family: 'ProximaNova-Regular';
+    font-size: 14px;
+    color: #212121;
+    line-height: 20px; }
+  .screenWraper .figure {
     width: 400px;
     height: 400px;
-    filter: blur(10px);
-    margin: 187px 0 0 174px;
-    position: fixed;
-    z-index: -100;
-    animation: scale 2s cubic-bezier(0.2, 0, 0, 1), spin 60s infinite; }
-@keyframes scale {
-  0% {
-    transform: scale(0);
-    filter: blur(500px); }
-  100% {
-    transform: scale(1);
-    filter: blur(10px); } }
-@keyframes spin {
-  from {
-    transform: rotate(0deg); }
-  to {
-    transform: rotate(360deg); } }
-  .firstScreen .violin {
-    background-image: url(../../images/violin.png);
-    width: 255px;
-    height: 595px;
-    background-size: contain;
-    background-repeat: no-repeat;
-    position: absolute;
-    top: 119px;
-    left: 178px;
-    animation: appear 10s cubic-bezier(0.2, 0, 0, 1); }
-@keyframes appear {
-  0% {
-    opacity: 0; }
-  100% {
-    opacity: 1; } }
-  .firstScreen .small {
-    width: 160px;
-    height: 160px;
-    z-index: 100;
-    position: absolute;
-    top: 395px;
-    left: -52px; }
-  .firstScreen .logoText {
-    margin: 200px 0 0 446px;
-    position: absolute; }
-    .firstScreen .logoText .logo {
-      transition: .5s ease-in-out;
-      animation: 0.5s cubic-bezier(0.2, 0, 0, 1); }
-      .firstScreen .logoText .logo .name {
-        font-family: "Proxima Nova";
-        font-size: 97px;
-        font-weight: 900; }
-@keyframes scrollup {
-  0% {
-    transform: rotateX(0deg) rotateY(0deg) rotateZ(0deg); }
-  100% {
-    transform: rotateX(0deg) rotateY(360deg) rotateZ(0deg); } }
-      .firstScreen .logoText .logo .subtitle {
-        font-family: "Playfair Display";
-        font-style: italic;
-        font-size: 30px;
-        animation: letterspacing 8s cubic-bezier(0.2, 0, 0, 1);
-        animation-fill-mode: backwards; }
-@keyframes letterspacing {
-  0% {
-    opacity: 0; }
-  100% {
-    opacity: 1; } }
-    .firstScreen .logoText .firstText {
-      font-family: 'Proxima Nova';
+    background-size: cover; }
+  .screenWraper#first {
+    padding-top: 0; }
+    .screenWraper#first .klassikaLogoWraper {
+      width: 100vw;
+      display: flex;
+      justify-content: center;
+      margin-top: 210px; }
+    .screenWraper#first .klassikaLogo {
+      background-image: url("../../images/logo.svg");
+      width: 1110px;
+      height: 247px;
+      background-size: contain;
+      background-repeat: no-repeat; }
+    .screenWraper#first .violinLogo {
+      background-image: url("../../images/violin.png");
+      width: 207px;
+      height: 547px;
+      background-size: contain;
+      background-repeat: no-repeat;
+      position: absolute;
+      margin-top: -100px;
+      margin-left: 220px; }
+    .screenWraper#first .textBlock {
+      width: 540px;
+      margin-top: 140px;
+      margin-left: 170px; }
+  .screenWraper#second .contentWraper {
+    width: 80vw;
+    display: flex;
+    justify-content: space-between; }
+  .screenWraper#second .figuresWraper {
+    margin-left: 100px; }
+    .screenWraper#second .figuresWraper #yellow {
+      background-image: url("../../images/oval-yellow.svg"); }
+    .screenWraper#second .figuresWraper #festival {
+      margin-top: -450px;
+      margin-left: 30px;
+      background-image: url("../../images/festival.png");
+      -webkit-mask-image: url("../../images/mask-1.svg");
+      -webkit-mask-repeat: no-repeat;
+      -webkit-mask-size: 100%; }
+  .screenWraper#second .textBlock {
+    width: 546px; }
+  .screenWraper#third h1 {
+    width: 100vw;
+    text-align: center; }
+  .screenWraper#third p {
+    width: 280px; }
+  .screenWraper#third .middleSection {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 70px;
+    width: 77.7vw;
+    margin-left: 11.1vw; }
+    .screenWraper#third .middleSection p {
+      margin-top: 150px; }
+    .screenWraper#third .middleSection #blue {
+      background-image: url("../../images/oval-blue.svg"); }
+    .screenWraper#third .middleSection #trambon {
+      background-image: url("../../images/trambon.png");
+      width: 360px;
+      height: 470px;
+      margin-top: -420px;
+      margin-left: 50px; }
+  .screenWraper#third .lastPWraper {
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    margin-top: 70px; }
+  .screenWraper#fourth .contentWraper {
+    display: flex;
+    justify-content: space-between;
+    width: 88vw; }
+  .screenWraper#fourth .textBlocks {
+    width: 700px;
+    margin-left: 170px; }
+    .screenWraper#fourth .textBlocks .textBlocksRow {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 60px; }
+      .screenWraper#fourth .textBlocks .textBlocksRow .textBlock {
+        width: 280px; }
+  .screenWraper#fourth #trumpet {
+    background-image: url("../../images/trumpet.png");
+    width: 240px;
+    height: 345px;
+    margin-top: 100px; }
+  .screenWraper#fifth .contentWraper {
+    margin-left: 170px; }
+  .screenWraper#fifth .contentBlock {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 1100px;
+    margin-bottom: 100px; }
+    .screenWraper#fifth .contentBlock .figuresBlock #oval {
+      background-image: url("../../images/oval-pink.svg");
+      width: 400px;
+      height: 400px;
+      background-size: contain;
+      background-repeat: no-repeat; }
+    .screenWraper#fifth .contentBlock .figuresBlock #photo {
+      margin-top: -350px;
+      margin-left: 50px;
+      background-image: url("../../images/festival-2.png");
+      -webkit-mask-image: url("../../images/mask-2.svg");
+      -webkit-mask-repeat: no-repeat;
+      -webkit-mask-size: 100%; }
+    .screenWraper#fifth .contentBlock .textBlock {
+      width: 545px; }
+  .screenWraper#fifth .schedule {
+    width: 75vw;
+    display: flex;
+    justify-content: space-between; }
+    .screenWraper#fifth .schedule h2 {
+      margin-top: 20px; }
+    .screenWraper#fifth .schedule .textBlock {
+      width: 280px; }
+  .screenWraper#musicians {
+    margin-bottom: 200px; }
+    .screenWraper#musicians h1 {
+      width: 100vw;
+      display: flex;
+      justify-content: center; }
+    .screenWraper#musicians .chevron {
+      width: 30px;
+      height: 57px;
+      background-image: url("../../images/chevron.svg");
+      background-size: contain;
+      background-repeat: no-repeat;
+      cursor: pointer; }
+      .screenWraper#musicians .chevron#left {
+        transform: rotate(180deg); }
+    .screenWraper#musicians .musiciansGalleryWraper {
+      margin-left: 5%;
+      margin-top: 100px;
+      width: 90%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center; }
+    .screenWraper#musicians .musiciansGallery {
+      width: 1080px;
+      display: flex;
+      justify-content: space-between;
+      overflow: hidden; }
+      .screenWraper#musicians .musiciansGallery .musicianBlock {
+        min-width: 280px;
+        margin-right: 120px; }
+        .screenWraper#musicians .musiciansGallery .musicianBlock .avatarWraper {
+          width: 60%;
+          display: flex;
+          justify-content: center; }
+        .screenWraper#musicians .musiciansGallery .musicianBlock #avatar {
+          width: 60px;
+          height: 60px;
+          background-image: url("../../images/festival.png");
+          background-size: cover;
+          -webkit-mask-image: url("../../images/avatar-mask.svg");
+          margin-bottom: 20px; }
+  .screenWraper#footer {
+    background: #2F6BF2;
+    padding-top: 0; }
+    .screenWraper#footer p, .screenWraper#footer a {
+      font-family: 'ProximaNova-Regular';
+      font-weight: 100;
       font-size: 17px;
+      color: #FFFFFF;
       line-height: 24px;
-      margin-top: 70px;
-      width: 538px;
-      animation: letterspacing 8s cubic-bezier(0.2, 0, 0, 1);
-      animation-fill-mode: backwards; }
+      width: 215px; }
+    .screenWraper#footer .contentWraper {
+      width: 1100px;
+      margin-left: 170px;
+      padding-top: 60px;
+      padding-bottom: 60px; }
+    .screenWraper#footer .partnersWraper {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start; }
+      .screenWraper#footer .partnersWraper .partnersLogos {
+        width: 170px;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap; }
+        .screenWraper#footer .partnersWraper .partnersLogos .logo {
+          background-image: url("../../images/partner1.svg");
+          background-size: contain;
+          background-repeat: no-repeat;
+          width: 66px;
+          height: 24px;
+          margin-bottom: 20px; }
+    .screenWraper#footer .separator {
+      width: 100%;
+      background-color: white;
+      height: 1px;
+      margin-top: 60px;
+      margin-bottom: 60px; }
+    .screenWraper#footer .klassikaLogo {
+      background-image: url("../../images/Klassika.png");
+      width: 112px;
+      height: 24px;
+      background-size: contain;
+      background-repeat: no-repeat;
+      margin-bottom: 30px; }
+    .screenWraper#footer .infoWraper {
+      width: 100%;
+      display: flex; }
 
-.secondScreen {
+.menubarWraper {
   width: 100vw;
-  height: 826px; }
-  .secondScreen .textWrapper {
-    margin: 0px 0 0 446px;
-    position: absolute; }
-    .secondScreen .textWrapper .firstText {
-      font-family: 'Proxima Nova';
-      font-size: 17px;
-      line-height: 24px;
-      width: 538px;
-      animation: letterspacing 8s cubic-bezier(0.2, 0, 0, 1);
-      animation-fill-mode: backwards; }
-      .secondScreen .textWrapper .firstText:last-of-type {
-        margin-top: 60px; }
+  height: 130px;
+  display: flex;
+  justify-content: center;
+  z-index: 1000;
+  background-image: linear-gradient(-180deg, #FFFFFF 62%, rgba(255, 255, 255, 0.51) 90%, rgba(255, 255, 255, 0) 100%);
+  position: fixed;
+  top: 0; }
 
 .menubar {
-  position: fixed;
-  z-index: 1000;
-  width: 100vw;
-  height: 60px;
+  width: 640px;
+  margin-top: 40px; }
+  .menubar .rubrics {
+    width: 100%;
+    display: flex;
+    justify-content: space-between; }
+    .menubar .rubrics p {
+      font-family: 'ProximaNova-Regular';
+      font-size: 12px;
+      color: #212121;
+      letter-spacing: 3.43px;
+      text-transform: uppercase;
+      cursor: pointer; }
+  .menubar .underline {
+    width: 100%;
+    height: .5px;
+    background-color: black;
+    margin-top: 10px; }
+  .menubar .selector {
+    width: 111px;
+    height: 7px;
+    background-color: #FFEC00;
+    margin-top: -1px;
+    transition: .5s ease-in-out; }
+
+.sideNavWraper {
+  top: 0;
+  height: 80vh;
+  width: 117vw;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: white;
-  font-family: 'Proxima Nova';
-  font-size: 17px; }
-  .menubar .left {
-    width: 646px;
-    margin-left: 30px;
-    display: flex;
-    justify-content: space-between; }
-  .menubar .right {
-    margin-right: 30px; }
-
-.place {
-  z-index: 1000;
-  font-family: 'Playfair Display';
-  font-style: italic;
-  font-size: 20px;
-  transform: rotate(-90deg);
   position: fixed;
-  margin: 310px 0 0 -50px; }
+  z-index: -1000;
+  margin-left: -124px; }
+
+.rightNav, .leftNav {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transform: rotate(-90deg); }
+  .rightNav p, .leftNav p {
+    font-family: 'ProximaNova-Regular';
+    font-size: 12px;
+    color: #212121;
+    letter-spacing: 3.43px;
+    text-transform: uppercase; }
+  .rightNav .rect, .leftNav .rect {
+    width: 280px;
+    height: 20px;
+    background: #FFEC00;
+    margin-top: 8px; }
+
+.leftNav p {
+  margin-top: 8px; }
 
 .map {
   position: fixed;

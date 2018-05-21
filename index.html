@@ -9,79 +9,282 @@
     <script src="javascripts/snap.svg-min.js"></script>
     <script src="javascripts/TweenMax.min.js"></script>
 
-    <script src="javascripts/scroll.js"></script>
-    <script src="javascripts/map.js"></script>
-    <script src="javascripts/audio.js"></script>
-    <script src="javascripts/morph2.js"></script>
+    <script src="javascripts/gallery.js"></script>
+    <script src="javascripts/menu.js"></script>
   </head>
 
   <body>
-    <div class="menubar">
-      <div class="left">
-        <p>карта</p>
-        <p>благотворительность</p>
-        <p>участники</p>
-        <p>программа</p>
-      </div>
-      <div class="right">
-        <p>контакты</p>
+    <div class="menubarWraper">
+      <div class="menubar">
+        <div class="rubrics">
+          <p class="rubric" id="about">о фестивале</p>
+          <p class="rubric" id="charity">благотворительность</p>
+          <p class="rubric" id="programme">программа</p>
+          <p class="rubric" id="musicians">участники</p>
+        </div>
+        <div class="underline"></div>
+        <div class="selector"></div>
       </div>
     </div>
 
-    <audio controls autoplay loop class="audio">
+    <!-- <audio controls autoplay loop class="audio">
       <source src="music/audio1.mp3" type="audio/mp3">
     </audio>
 
-    <figure class="soundOnOff"></figure>
+    <figure class="soundOnOff"></figure> -->
 
-    <p class="place">Феодосия, лето 2018</p>
+    <div class="sideNavWraper">
+      <div class="leftNav">
+        <div class="rect"></div>
+        <p class="caption">Феодосия, лето 2018</p>
+      </div>
 
-    <div class="map"></div>
-    <div class='close'><div></div><div></div></div>
+      <div class="rightNav">
+        <p class="caption">Интерактивная карта</p>
+        <div class="rect"></div>
+      </div>
+    </div>
 
-    <section class="firstScreen">
-      <svg class="firstScreenOval" id="firstScreenOval" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 602.4 609.71">
-        <defs>
-          <style>
-            .firstScreenOval {
-              fill: rgba(253, 235, 14, 1);
-              transition: 1s ease-in-out;
-            }
-          </style>
-        </defs>
-        <title>oval1</title>
-        <path class="firstScreenOvalPath" d="M264,180.57c-24.14,25.12-39.24,57.36-53.64,89.08-34.08,75.1-67.38,155.69-56.35,237.42C163.87,580.39,210.09,646.2,271.16,688c74.78,51.16,172.24,67.74,259.73,44.21a307.22,307.22,0,0,0,109.18-54.28C722.91,613.12,766.94,502.09,751,398.13c-4.67-30.44-14.6-61.06-35-84.12-17.32-19.56-40.86-32.3-63.88-44.64L464.33,168.73c-30.66-16.43-69.26-40.66-105.62-34.89C325.1,139.18,287.55,156,264,180.57Z" transform="translate(-151.83 -132.97)"/>
-      </svg>
+    <section class="screenWraper" id="first">
+      <div class="klassikaLogoWraper">
+        <figure class="klassikaLogo"></figure>
+        <figure class="violinLogo"></figure>
+      </div>
 
-      <figure class="violin"></figure>
+      <div class="textBlock">
+        <h2>Международный арт-фестиваль</h2>
+        <p>В середине лета живописная Феодосия предстанет перед местными жителями и гостями города в новом амплуа. Впервые весь город станет единой площадкой для проведения Международного арт-фестиваля «Klassika».</p>
+      </div>
+    </section>
 
-      <svg class="firstScreenOval small" id="firstScreenOval" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 602.4 609.71">
-        <defs>
-          <style>
-            .firstScreenOval {
-              fill: rgba(253, 235, 14, 1);
-            }
-          </style>
-        </defs>
-        <title>oval1</title>
-        <path class="firstScreenOvalPath" d="M264,180.57c-24.14,25.12-39.24,57.36-53.64,89.08-34.08,75.1-67.38,155.69-56.35,237.42C163.87,580.39,210.09,646.2,271.16,688c74.78,51.16,172.24,67.74,259.73,44.21a307.22,307.22,0,0,0,109.18-54.28C722.91,613.12,766.94,502.09,751,398.13c-4.67-30.44-14.6-61.06-35-84.12-17.32-19.56-40.86-32.3-63.88-44.64L464.33,168.73c-30.66-16.43-69.26-40.66-105.62-34.89C325.1,139.18,287.55,156,264,180.57Z" transform="translate(-151.83 -132.97)"/>
-      </svg>
-
-      <div class="logoText skew">
-        <div class="logo">
-          <h1 class="name">Klassika</h1>
-          <p class="subtitle">Международный арт-фестиваль </p>
+    <section class="screenWraper" id="second">
+      <div class="contentWraper">
+        <div class="figuresWraper">
+          <figure class="figure" id="yellow"></figure>
+          <figure class="figure" id="festival"></figure>
         </div>
 
-        <p class="firstText">В середине лета живописная Феодосия предстанет перед<br>местными жителями и гостями города в новом амплуа.<br> Впервые весь город станет единой площадкой для<br> проведения Международного арт-фестиваля «Klassika».</p>
+        <div class="textBlock">
+          <h1>о фестивале</h1>
+          <p>Название фестиваля говорит за себя: с 6 по 8 июля улицы Феодосии наполнятся звуками классических произведений, а сам город станет местом встречи ведущих отечественных и зарубежных артистов.</p>
+          <p>В городе будут открыты более 25 площадок, на которых  с утра до позднего вечера будут проходить самые разные мероприятия —  от флэшмобов и выставок до мастерклассов и камерных концертов.</p>
+        </div>
       </div>
     </section>
 
-    <section class="secondScreen">
-      <div class="textWrapper skew">
-        <p class="firstText">Название фестиваля говорит за себя: с 6 по 8 июля улицы Феодосии наполнятся звуками классических произведений,  а сам город станет местом встречи ведущих отечественных  и зарубежных артистов.</p>
-        <p class="firstText">В городе будут открыты более 25 площадок, на которых с утра  до позднего вечера будут проходить самые разные мероприятия — от флэшмобов и выставок до мастерклассов и камерных концертов.</p>
+    <section class="screenWraper" id="third">
+      <h1>благотворительность</h1>
+      <div class="middleSection">
+        <p>Фестиваль — бесплатный для посещения, а все вырученные деньги уйдут  на благотворительность и помощь.</p>
+        <div class="blueFigures">
+          <figure class="figure" id="blue"></figure>
+          <figure class="figure" id="trambon"></figure>
+        </div>
+        <p>Помочь можно, купив инструмент тем, кто в них нуждается или пожертвовав деньги.</p>
+      </div>
+      <div class="lastPWraper">
+        <p>Фестиваль — бесплатный для посещения, а все вырученные деньги уйдут  на благотворительность и помощь.</p>
       </div>
     </section>
 
+    <section class="screenWraper" id="fourth">
+      <div class="contentWraper">
+        <div class="textBlocks">
+          <h1>как это работает</h1>
+          <div class="textBlocksRow">
+            <div class="textBlock">
+              <h2>Приходит редактор</h2>
+              <p>Человек с крутыми навиками письма на русском и английском язкыках, который знает, как нам круче подать свои тексты.</p>
+            </div>
+
+            <div class="textBlock">
+              <h2>Приходит редактор</h2>
+              <p>Человек с крутыми навиками письма на русском и английском язкыках, который знает, как нам круче подать свои тексты.</p>
+            </div>
+          </div>
+
+          <div class="textBlocksRow">
+            <div class="textBlock">
+              <h2>Приходит редактор</h2>
+              <p>Человек с крутыми навиками письма на русском и английском язкыках, который знает, как нам круче подать свои тексты.</p>
+            </div>
+
+            <div class="textBlock">
+              <h2>Приходит редактор</h2>
+              <p>Человек с крутыми навиками письма на русском и английском язкыках, который знает, как нам круче подать свои тексты.</p>
+            </div>
+          </div>
+        </div>
+        <figure class="figure" id="trumpet"></figure>
+      </div>
+    </section>
+
+    <section class="screenWraper" id="fifth">
+      <div class="contentWraper">
+        <div class="contentBlock" id="left">
+          <div class="figuresBlock">
+            <figure class="figure" id="oval"></figure>
+            <figure class="figure" id="photo"></figure>
+          </div>
+
+          <div class="textBlock">
+            <h1>кинопляж</h1>
+            <p>где все желающие на большом экране на берегу (залива/моря) смогут насладиться эксклюзивными трансляциями из мира музыки и кино.</p>
+          </div>
+        </div>
+
+        <div class="contentBlock" id="right">
+          <div class="textBlock">
+            <h1>кинопляж</h1>
+            <p>где все желающие на большом экране на берегу (залива/моря) смогут насладиться эксклюзивными трансляциями из мира музыки и кино.</p>
+          </div>
+
+          <div class="figuresBlock">
+            <figure class="figure" id="oval"></figure>
+            <figure class="figure" id="photo"></figure>
+          </div>
+        </div>
+
+        <div class="contentBlock" id="left">
+          <div class="figuresBlock">
+            <figure class="figure" id="oval"></figure>
+            <figure class="figure" id="photo"></figure>
+          </div>
+
+          <div class="textBlock">
+            <h1>кинопляж</h1>
+            <p>где все желающие на большом экране на берегу (залива/моря) смогут насладиться эксклюзивными трансляциями из мира музыки и кино.</p>
+          </div>
+        </div>
+
+        <div class="contentBlock" id="right">
+          <div class="textBlock">
+            <h1>кинопляж</h1>
+            <p>где все желающие на большом экране на берегу (залива/моря) смогут насладиться эксклюзивными трансляциями из мира музыки и кино.</p>
+          </div>
+
+          <div class="figuresBlock">
+            <figure class="figure" id="oval"></figure>
+            <figure class="figure" id="photo"></figure>
+          </div>
+        </div>
+
+        <div class="contentBlock" id="left">
+          <div class="figuresBlock">
+            <figure class="figure" id="oval"></figure>
+            <figure class="figure" id="photo"></figure>
+          </div>
+
+          <div class="textBlock">
+            <h1>кинопляж</h1>
+            <p>где все желающие на большом экране на берегу (залива/моря) смогут насладиться эксклюзивными трансляциями из мира музыки и кино.</p>
+          </div>
+        </div>
+
+        <div class="schedule">
+          <div class="textBlock">
+            <h2>Утренняя программа</h2>
+            <h2>с 10:00 до 12:00</h2>
+            <p>включающая мастер-классы, выставки, флешмобы, тематические аллеи и др</p>
+          </div>
+
+          <div class="textBlock">
+            <h2>Утренняя программа</h2>
+            <h2>с 10:00 до 12:00</h2>
+            <p>включающая мастер-классы, выставки, флешмобы, тематические аллеи и др</p>
+          </div>
+
+          <div class="textBlock">
+            <h2>Утренняя программа</h2>
+            <h2>с 10:00 до 12:00</h2>
+            <p>включающая мастер-классы, выставки, флешмобы, тематические аллеи и др</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="screenWraper" id="musicians">
+      <h1>участники</h1>
+      <div class="musiciansGalleryWraper">
+        <div class="chevron" id="left"></div>
+        <div class="musiciansGallery">
+          <div class="musicianBlock">
+            <div class="avatarWraper">
+              <figure class="figure" id="avatar"></figure>
+            </div>
+            <h2>Борис Андрианов1</h2>
+            <p>Ведущий российский виолончелист, Заслуженный артист России, организатор и идейный вдохновитель проекта молодых музыкантов «Поколение звезд».  Он сотрудничает со многими знаменитыми оркестрами и дирижерами мира  и ни раз становился победителем международных конкурсов.</p>
+          </div>
+
+          <div class="musicianBlock">
+            <div class="avatarWraper">
+              <figure class="figure" id="avatar"></figure>
+            </div>
+            <h2>Борис Андрианов2</h2>
+            <p>Ведущий российский виолончелист, Заслуженный артист России, организатор и идейный вдохновитель проекта молодых музыкантов «Поколение звезд».  Он сотрудничает со многими знаменитыми оркестрами и дирижерами мира  и ни раз становился победителем международных конкурсов.</p>
+          </div>
+
+          <div class="musicianBlock">
+            <div class="avatarWraper">
+              <figure class="figure" id="avatar"></figure>
+            </div>
+            <h2>Борис Андрианов3</h2>
+            <p>Ведущий российский виолончелист, Заслуженный артист России, организатор и идейный вдохновитель проекта молодых музыкантов «Поколение звезд».  Он сотрудничает со многими знаменитыми оркестрами и дирижерами мира  и ни раз становился победителем международных конкурсов.</p>
+          </div>
+
+          <div class="musicianBlock">
+            <div class="avatarWraper">
+              <figure class="figure" id="avatar"></figure>
+            </div>
+            <h2>Борис Андрианов4</h2>
+            <p>Ведущий российский виолончелист, Заслуженный артист России, организатор и идейный вдохновитель проекта молодых музыкантов «Поколение звезд».  Он сотрудничает со многими знаменитыми оркестрами и дирижерами мира  и ни раз становился победителем международных конкурсов.</p>
+          </div>
+
+          <div class="musicianBlock">
+            <div class="avatarWraper">
+              <figure class="figure" id="avatar"></figure>
+            </div>
+            <h2>Борис Андрианов5</h2>
+            <p>Ведущий российский виолончелист, Заслуженный артист России, организатор и идейный вдохновитель проекта молодых музыкантов «Поколение звезд».  Он сотрудничает со многими знаменитыми оркестрами и дирижерами мира  и ни раз становился победителем международных конкурсов.</p>
+          </div>
+        </div>
+        <div class="chevron" id="right"></div>
+      </div>
+    </section>
+
+    <section class="screenWraper" id="footer">
+      <div class="contentWraper">
+        <div class="partnersWraper">
+          <div class="partnersLogos">
+            <div class="logo"></div>
+            <div class="logo"></div>
+            <div class="logo"></div>
+            <div class="logo"></div>
+          </div>
+          <p>По поводу сотрудничества писать на <a href="mailto: me">mail@mail.com</a></p>
+        </div>
+
+        <div class="separator"></div>
+
+        <div class="klassikaLogo"></div>
+        <div class="infoWraper">
+          <div class="infoColumn">
+            <p>+7 (900) 123 - 45 - 67</p>
+            <p>email@gmail.com</p>
+            <p>Адрес</p>
+          </div>
+          <div class="infoColumn">
+            <p>6—8 июня</p>
+            <p>Крым, Феодосия</p>
+          </div>
+          <div class="infoColumn">
+            <p>О фестивале</p>
+            <p>Карта</p>
+            <p>Благотворительность</p>
+            <p>Программа</p>
+            <p>Участники</p>
+          </div>
+        </div>
+      </div>
+    </section>
 </html>

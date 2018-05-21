@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="301px" height="284px" viewBox="0 0 301 284" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 49 (51002) - http://www.bohemiancoding.com/sketch -->
+    <title>Fill 1</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <filter x="-4.3%" y="-4.5%" width="108.5%" height="109.0%" filterUnits="objectBoundingBox" id="filter-1">
+            <feGaussianBlur stdDeviation="4" in="SourceGraphic"></feGaussianBlur>
+        </filter>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Desktop-1440" transform="translate(-169.000000, -3168.000000)" fill="#F9B9AA">
+            <g id="Group-15" transform="translate(179.000000, 3065.000000)">
+                <path d="M24.9462598,195.656072 C0.609904516,229.690919 -8.00928304,271.436555 8.51366543,308.154757 C25.0366139,344.872959 68.976844,374.80224 119.228529,377.750617 C152.640286,379.710871 186.292,369.972431 212.171781,353.555878 C238.051562,337.139324 256.503052,314.451329 267.932103,290.158349 C285.368961,253.094018 286.531714,210.522471 264.24536,175.037995 C244.462258,143.540282 192.10873,107.332706 142.716149,112.494936 C95.7734967,117.401282 46.016537,166.187153 24.9462598,195.656072" id="Fill-1" filter="url(#filter-1)"></path>
+            </g>
+        </g>
+    </g>
+</svg>

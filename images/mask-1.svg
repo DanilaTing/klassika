@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="431px" height="377px" viewBox="0 0 431 377" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 49 (51002) - http://www.bohemiancoding.com/sketch -->
+    <title>Mask</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M65.888529,315.432359 C94.1434269,376.808904 155.056436,416.987609 217.686636,442.434332 C263.316274,460.973314 312.862819,473.566377 361.687464,467.061493 C410.513369,460.557868 458.418316,432.058243 478.035608,386.909287 C498.65449,339.456493 484.525151,282.454725 454.231798,240.503448 C423.939705,198.55343 379.73371,168.981198 335.323617,142.395145 C301.986441,122.43735 267.030343,103.295341 228.629787,97.3280196 C113.377722,79.4185018 17.8349188,211.047037 65.888529,315.432359" id="path-1"></path>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Desktop-1440" transform="translate(-127.000000, -966.000000)">
+            <g id="Group-8" transform="translate(75.000000, 879.000000)">
+                <g id="ezra-jeffrey-77199-unsplash">
+                    <mask id="mask-2" fill="white">
+                        <use xlink:href="#path-1"></use>
+                    </mask>
+                    <use id="Mask" fill="#B8EED7" transform="translate(270.469959, 282.236915) rotate(120.000000) translate(-270.469959, -282.236915) " xlink:href="#path-1"></use>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
